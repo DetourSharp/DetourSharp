@@ -3,11 +3,23 @@
     <Nullable>enable</Nullable>
     <TargetFramework>net6.0</TargetFramework>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>DetourSharp</PackageId>
+    <RepositoryUrl>https://github.com/DetourSharp/DetourSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>A fully managed .NET library for interception of binary functions.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Iced" Version="1.15.0" />
-    <PackageReference Include="TerraFX.Interop.Windows" Version="10.0.20348-rc2" />
+    <PackageReference Include="Iced" Version="1.17.0" />
+    <PackageReference Include="TerraFX.Interop.Windows" Version="10.0.20348" />
     <PackageReference Include="CommunityToolkit.HighPerformance" Version="7.1.2" />
   </ItemGroup>
 </Project>
